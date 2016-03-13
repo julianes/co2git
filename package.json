@@ -24,7 +24,7 @@
     "browser"
   ],
   "dependencies": {
-    "cloudant": "~1.4.0",
+    //"cloudant": "~1.4.0",
     "nano": "~6.2.0"
   }
 }
