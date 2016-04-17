@@ -153,9 +153,6 @@
     	});
 
 
-
-
-
 $('button').on('click', function(){
     $('#slider').toggleClass('open');
     		$.get("/modifyDB", function (data){
