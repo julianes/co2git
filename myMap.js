@@ -14,6 +14,7 @@
 //   export COUCH_DATABASE="mydatabase"
 //   export COUCH_URL="http://julianes:juli@localhost:5984"
 //   export COUCH_TRANSFORM="/home/julian/Downloads/mapaer/jQuery-Mapael-1.1.0/transform.js"
+//   export COUCH_DELIMITER=","
 //   cat caitGHG.csv | couchimport    
 //
 //   https://github.com/glynnbird/couchimport

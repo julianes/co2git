@@ -8,7 +8,7 @@ var requestHandlers = require("./requestHandlers");
 // dbserver.startDB(currentDB);
 
 var handle = {} // it is an array of javascript objects, that means: Name and Value. 
-handle["/"] = requestHandlers.iniciar; // Name: "/"   -     Value:"requestHandlers.iniciar" (a function)
+handle["/"] = requestHandlers.co2; // Name: "/"   -     Value:"requestHandlers.iniciar" (a function)
 handle["/iniciar"] = requestHandlers.iniciar;
 handle["/subir"] = requestHandlers.subir;
 handle["/co2"] = requestHandlers.co2;
