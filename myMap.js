@@ -162,3 +162,20 @@ $('button').on('click', function(){
 					});
     		});
 });
+
+
+
+// var min = 12,
+//     max = 100,
+//     select = document.getElementById('countries');
+
+// for (var i = min; i<=max; i++){
+//     var opt = document.createElement("option");
+//     opt.value = i;
+//     opt.innerHTML = i;
+//     select.appendChild(opt);
+// }
+
+
+
+

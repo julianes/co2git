@@ -23,6 +23,7 @@
         .container {
             min-width: 700px;
             margin:auto;
+            position: relative;
         }
 		
 		.zoomIn, .zoomOut {
@@ -70,10 +71,12 @@
 		}
 		#slider{
 		    background:white;
+		    background-color: white
 		    height:100%;
 		    width:100%;
 		    position:relative;
-		    left:-100%;  
+		    left:-100%; 
+		    top:-20px; 
 		}
 		.open{
 		    left:0px !important;
@@ -84,18 +87,36 @@
 		     -moz-transition: left 0.3s ease-out;  /* Firefox 4-15 */
 		       -o-transition: left 0.3s ease-out;  /* Opera 10.50–12.00 */
 		          transition: left 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
-
+		         
 		}
-		
+
+		#naviA,
+		#naviB {
+		  
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		}
+		#naviB {
+		  z-index: 0;
+		}	
+		#footer {
+    background-color:white;
+    color:black;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
 		
 </style>
 </head>
 
 <body>
 	<div class="container">
-		<h2>Flight CO2 impact </h2>
-		<button>slide</button>
-		<div id="slider" class="transition">
+			<div id="naviA">
+			<h2>Flight CO2 impact </h2>	
 				<div id="map-header">
 						<center>
 							<table>
@@ -105,8 +126,7 @@
 							</th>
 							<th>
 							<select id="countries" name="countries">
-								<option value="DE">Germany</option>
-								<option value="CO">Colombia</option>
+								
 							</select>
 							</th>	
 							</tr>
@@ -118,10 +138,53 @@
 						<span>Alternative content for the map</span>
 					</div>
 				</div>
-		</div>		
-		
+
+				<div id="footer">
+					   <p>Copyright (c) 2016 All rights reserved</p>
+				</div>	
+
+			</div>		
+
+
+
+			<div id="naviB">
+				
+
+				<button>slide</button>
+
+				<div id="slider" class="transition">
+					<h2>World CO2 per capita </h2>
+						<div id="map-header">
+								<center>
+									<table>
+									<tr>	
+									<th>
+									<h3>I am living in: </h3>
+									</th>
+									<th>
+									<select id="countries" name="countries">
+								
+									</select>
+									</th>	
+									</tr>
+									</table>
+							</center>
+						</div>
+						<div class="container1">
+							<div class="map">
+								<span>Alternative content for the map</span>
+							</div>
+						</div>
+				</div>
+				<div id="footer">
+					   <p>Copyright (c) 2016 All rights reserved</p>
+				</div>	
+			</div>	
+
 	</div>
 	
+	
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" charset="utf-8" ></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js" charset="utf-8" ></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js" charset="utf-8" ></script>
