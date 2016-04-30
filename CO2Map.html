@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Plan your next flight or Vacation by CO2 impact</title>
+	<!--title>Plan your next flight or Vacation by CO2 impact</title-->
+	<title>co2mapper - Fly Smart or better, don't fly!</title>
 	<style type="text/css">
 		body {
 			color:#5d5d5d;
@@ -17,8 +18,25 @@
 		
 		h2 {
 			font-size:22px;
-			margin-top:50px;
+			margin-top:20px;
 		}
+
+			h4 {
+			font-weight:normal;
+			margin-top:0px;
+		}
+
+
+		h5 {
+			font-size:15px;
+			font-weight:normal;
+			margin-top:20px;
+			
+		}
+
+
+
+
 		
         .container {
             min-width: 700px;
@@ -116,20 +134,33 @@
 <body>
 	<div class="container">
 			<div id="naviA">
-			<h2>Flight CO2 impact </h2>	
+			<h2>Your CO2 impact - Flights</h2>	
+			
+			<h5>Flying is the most carbon-intensive activity where you have control. We provide you with a comprenhensive tool to ensure a low-carbon trip. Fly smart or better, don't fly </h5>	
+
 				<div id="map-header">
 						<center>
 							<table>
 							<tr>	
 							<th>
-							<h3>I am living in: </h3>
+							<h3>I live in: </h3>
 							</th>
 							<th>
-							<select id="countries" name="countries">
-								
+							<select id="countries" name="countries" style="width: 150px">
+							</select>
+							</th>
+							<th>
+							<h3> flying to: </h3>
+							</th>
+							<th>
+							<select id="countries2" name="countries2" style="width: 150px">
 							</select>
 							</th>	
+							<th>	
+								<div id="scroll-msg"><h5>scroll down to see results... </h5></div>
+							</th>
 							</tr>
+							
 							</table>
 					</center>
 				</div>
@@ -139,15 +170,17 @@
 					</div>
 				</div>
 
-				<div id="footer">
-					   <p>Copyright (c) 2016 All rights reserved</p>
-				</div>	
-
-			</div>		
 
 
+				<center> 
+					<div id="scroll-msg2"><h4>According to official data you contribute with XXX tons of CO2 per year. If you want to live sustainable, your CO2 emissions shouldn't surpass 2.5 Tons per year. </h4>	</div>
 
-			<div id="naviB">
+					<div id="table_div"></div>
+
+				</center>
+		</div>		
+
+			<!--div id="naviB">
 				
 
 				<button>slide</button>
@@ -176,15 +209,12 @@
 							</div>
 						</div>
 				</div>
-				<div id="footer">
-					   <p>Copyright (c) 2016 All rights reserved</p>
-				</div>	
-			</div>	
+				
+			</div-->	
 
 	</div>
 	
-	
-
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" charset="utf-8" ></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js" charset="utf-8" ></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js" charset="utf-8" ></script>
