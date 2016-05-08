@@ -28,9 +28,9 @@
 
 
 		h5 {
-			font-size:15px;
+			font-size:13px;
 			font-weight:normal;
-			margin-top:20px;
+			margin-top:0px;
 			
 		}
 
@@ -134,35 +134,38 @@
 <body>
 	<div class="container">
 			<div id="naviA">
-			<h2>Your CO2 impact - Flights</h2>	
-			
-			<h5>Flying is the most carbon-intensive activity where you have control. We provide you with a comprenhensive tool to ensure a low-carbon trip. Fly smart or better, don't fly </h5>	
-
 				<div id="map-header">
-						<center>
-							<table>
-							<tr>	
-							<th>
-							<h3>I live in: </h3>
-							</th>
-							<th>
-							<select id="countries" name="countries" style="width: 150px">
-							</select>
-							</th>
-							<th>
-							<h3> flying to: </h3>
-							</th>
-							<th>
-							<select id="countries2" name="countries2" style="width: 150px">
-							</select>
-							</th>	
-							<th>	
-								<div id="scroll-msg"><h5>scroll down to see results... </h5></div>
-							</th>
-							</tr>
-							
-							</table>
-					</center>
+					<div style="text-align:left;">
+						<div style="display:inline-block;">
+							<img src="logo.png" style ="max-width:70%; max-height:70%;">
+						</div>
+
+						<div style="display:inline-block;">	
+							<center>		
+								<table>	
+								<tr>	
+									<th>
+									<h3>I live in: </h3>
+									</th>
+									<th>
+									<select id="countries" name="countries" style="width: 150px">
+									</select>
+									</th>
+									<th>
+									<h3> flying to: </h3>
+									</th>
+									<th>
+									<select id="countries2" name="countries2" style="width: 150px">
+									</select>
+									</th>	
+									<th>	
+										<div id="scroll-msg"><h5>scroll down to see results... </h5></div>
+									</th>
+								</tr>
+								</table>
+							</center>
+						</div>
+					</div> 	
 				</div>
 				<div class="container1">
 					<div class="map">
@@ -170,14 +173,17 @@
 					</div>
 				</div>
 
+			<h2>Your CO2 impact - Flights</h2>	
+			
+			<h5>Flying is the most carbon-intensive activity where you have control. We provide you with a comprenhensive tool to ensure a low-carbon trip. Fly smart or better, don't fly </h5>		
 
 
-				<center> 
-					<div id="scroll-msg2"><h4>According to official data you contribute with XXX tons of CO2 per year. If you want to live sustainable, your CO2 emissions shouldn't surpass 2.5 Tons per year. </h4>	</div>
+			<center> 
+				<div id="scroll-msg2"><h4>According to official data you contribute with XXX tons of CO2 per year. If you want to live sustainable, your CO2 emissions shouldn't surpass 2.5 Tons per year. </h4>	</div>
 
-					<div id="table_div"></div>
+				<div id="table_div"></div>
 
-				</center>
+			</center>
 		</div>		
 
 			<!--div id="naviB">

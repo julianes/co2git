@@ -3,16 +3,13 @@ var server = require("./server"); // file server.js in same directory. FUnction 
 var router = require("./router");
 var requestHandlers = require("./requestHandlers");
 
-
-// var currentDB ={};
-// dbserver.startDB(currentDB);
-
 var handle = {} // it is an array of javascript objects, that means: Name and Value. 
 handle["/"] = requestHandlers.co2; // Name: "/"   -     Value:"requestHandlers.iniciar" (a function)
 handle["/iniciar"] = requestHandlers.iniciar;
 handle["/subir"] = requestHandlers.subir;
 handle["/co2"] = requestHandlers.co2;
 handle["/addJS"] = requestHandlers.addJS;
+handle["/addPNG"] = requestHandlers.addPNG;
 handle["/modifyDB"] = requestHandlers.modifyDB;
 //handle["/dbHandle"] = requestHandlers.dbHandle;
 

@@ -49,20 +49,25 @@ function addJS(res, dataPosteada, pathname) { // adds Javascript sources
   );
 }
 
+function addPNG(res, dataPosteada, pathname){
+     //var img = fs.readFileSync('./logo.png');
+     //res.writeHead(200, {'Content-Type': 'image/png' });
+     //res.end(img, 'binary');      
+  fs.readFile('.'+pathname, function (err,content){
+        if (err){
+           res.writeHead(500);
+           res.end();
+        }else {
+          res.writeHead(200,{"Content-Type": "iamge/png"});
+          res.end(content,'binary');
+        }
+    }  
+  );
+}
+
+
 function modifyDB(res, dataPosteada,test_db) {
-        // var data2 = { 
-        //     name: 'pikachu30', 
-        //     skills: ['thunder bolt', 'iron tail', 'quick attack', 'mega punch'], 
-        //     type: 'electric', 
-        //     color: '#FF0000'
-        // };
-
-
-        // test_db.update(data2, '96825cbdff8688ddc1a84d602500238a', function(err, res){
-        //             if(!err){
-        //             }
-        //         });  
-
+        
 
      switch(2) {
         case 1: // working script
@@ -110,3 +115,4 @@ exports.iniciar = iniciar;
 exports.subir = subir;
 exports.co2 = co2;
 exports.addJS = addJS;
+exports.addPNG = addPNG;

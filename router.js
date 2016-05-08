@@ -10,7 +10,9 @@ function route(handle, pathname, response, postData, dbtest) {
     handle[pathname](response, postData); //call the function with its parameters. The function is in the environment.
   } else if(path.extname(pathname) == '.js') { // redirect ALL js files to this function
       handle['/addJS'](response, postData, pathname);
-  } else{
+  } else if(path.extname(pathname) == '.png'){
+      handle['/addPNG'](response, postData, pathname);
+  }else{
     console.log("No se ha encontrado manipulador para " + pathname);
     response.writeHead(404, {"Content-Type": "text/html"});
     response.write("404 No encontrado");
